@@ -9,16 +9,11 @@ class Catagorypage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       body: Container(
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                    "https://images.pexels.com/photos/2767814/pexels-photo-2767814.jpeg?auto=compress&cs=tinysrgb&w=600"))),
+        decoration: BoxDecoration(),
         height: double.maxFinite,
         width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -46,18 +41,25 @@ class Catagorypage extends StatelessWidget {
                           ),
                         ));
                   },
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "sports",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    height: 100,
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/256/8799/8799062.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        height: 100,
+                        width: 100,
+                      ),
+                      Text(
+                        "sports",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
                 InkWell(
@@ -70,18 +72,25 @@ class Catagorypage extends StatelessWidget {
                           ),
                         ));
                   },
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "Biology",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/128/902/902493.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        width: 100,
+                      ),
+                      Text(
+                        "Biology",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
               ],
@@ -97,18 +106,25 @@ class Catagorypage extends StatelessWidget {
                           Questionlist: Dummydb.Chemistry,
                         ),
                       )),
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "chemistry",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/128/2158/2158320.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        width: 100,
+                      ),
+                      Text(
+                        "Chemistry",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
                 InkWell(
@@ -119,18 +135,25 @@ class Catagorypage extends StatelessWidget {
                           Questionlist: Dummydb.mathslist,
                         ),
                       )),
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "maths",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/128/3771/3771278.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        width: 100,
+                      ),
+                      Text(
+                        "Mathematics",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
               ],
@@ -146,18 +169,25 @@ class Catagorypage extends StatelessWidget {
                           Questionlist: Dummydb.physicslist,
                         ),
                       )),
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "physics",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/128/3463/3463594.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        width: 100,
+                      ),
+                      Text(
+                        "Physics",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
                 InkWell(
@@ -168,18 +198,25 @@ class Catagorypage extends StatelessWidget {
                           Questionlist: Dummydb.gklist,
                         ),
                       )),
-                  child: Container(
-                    child: Center(
-                        child: Text(
-                      "gk",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
-                    )),
-                    height: 100,
-                    decoration: BoxDecoration(
-                        color: Colorconstants.goldenyellowcolor,
-                        borderRadius: BorderRadius.circular(20)),
-                    width: 100,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn-icons-png.flaticon.com/128/13565/13565345.png")),
+                            borderRadius: BorderRadius.circular(20)),
+                        width: 100,
+                      ),
+                      Text(
+                        "GK",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colorconstants.wronganswerColor),
+                      )
+                    ],
                   ),
                 ),
               ],

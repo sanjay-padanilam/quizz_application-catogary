@@ -56,6 +56,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
           ringColor: Colors.blue,
         ),
+        SizedBox(
+          height: 20,
+        ),
         Expanded(
           child: Container(
             decoration: BoxDecoration(
