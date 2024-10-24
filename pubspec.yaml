@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   lottie: ^3.1.2
   flutter_animation_progress_bar: ^2.3.1
+  circular_countdown_timer: ^0.2.4
 
 dev_dependencies:
   flutter_test:
