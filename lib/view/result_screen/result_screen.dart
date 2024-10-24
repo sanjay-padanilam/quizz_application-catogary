@@ -23,15 +23,18 @@ class _ResultScreenState extends State<ResultScreen> {
   }
 
   int starcount = 0;
+
   calculatefn() {
     var percentage = widget.rightaswercount / widget.eachlist.length * 100;
 
     if (percentage >= 80) {
       starcount = 3;
-    } else if (percentage <= 50) {
+    } else if (percentage >= 50) {
       starcount = 2;
     } else if (percentage >= 30) {
       starcount = 1;
+    } else {
+      starcount = 0;
     }
   }
 

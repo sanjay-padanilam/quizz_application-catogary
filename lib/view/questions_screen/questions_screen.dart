@@ -184,6 +184,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
   AppBar _build_appbar_section() {
     return AppBar(
+      leading: SizedBox(),
       backgroundColor: Colorconstants.Scaffoldbgcolor,
       actions: [
         Text(
